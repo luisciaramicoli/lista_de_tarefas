@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #6a11cb;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #6a11cb;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #2575fc;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    padding: 10px 15px;
+    background: #eaeaea;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .filters button:hover,
+  .filters button.active {
+    background: #6a11cb;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+  }
+  
+  .task.completed span {
+    text-decoration: line-through;
+    color: #6a11cb;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .actions .complete-btn {
+    color: #6a11cb;
+  }
+  
+  .actions .delete-btn {
+    color: #e63946;
+  }
+  
+  .actions button:hover {
+    opacity: 0.8;
+  }
+  
